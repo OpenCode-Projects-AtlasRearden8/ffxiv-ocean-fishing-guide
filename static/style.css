@@ -1,0 +1,113 @@
+/* FFXIV Ocean Fishing Guide — hand-rolled, dependency-free stylesheet. */
+
+:root {
+  --ink: #22313f;
+  --paper: #fdfbf7;
+  --accent: #17737f;
+  --accent-soft: #d7eef1;
+  --warn: #8a6d1a;
+  --warn-soft: #fdf3d7;
+  --rule: #dde3e8;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0 auto;
+  padding: 0 1rem 3rem;
+  max-width: 46rem;
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+.site-header {
+  border-bottom: 3px solid var(--accent);
+  padding-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.site-header h1, .site-header h1 a {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: var(--accent);
+  text-decoration: none;
+  margin: 0;
+  font-size: 1.45rem;
+}
+
+.tagline {
+  font-style: italic;
+  color: #5a6b7a;
+  margin: 0.25rem 0 0.9rem;
+}
+
+nav {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.9;
+  padding-bottom: 0.9rem;
+}
+
+nav a { color: var(--accent); text-decoration: none; margin-right: 0.5rem; }
+nav a:hover { text-decoration: underline; }
+
+h1, h2, h3, h4 { font-family: "Helvetica Neue", Arial, sans-serif; line-height: 1.3; }
+
+main h1, main h2 { color: var(--accent); margin-top: 2rem; }
+
+.verify-badge {
+  background: var(--warn-soft);
+  border-left: 4px solid var(--warn);
+  color: var(--warn);
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  margin: 0 0 1.2rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 1rem 0 1.6rem;
+  font-size: 0.95rem;
+}
+
+th, td {
+  border: 1px solid var(--rule);
+  padding: 0.45rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+th { background: var(--accent-soft); font-family: "Helvetica Neue", Arial, sans-serif; }
+
+blockquote {
+  border-left: 4px solid var(--accent);
+  background: var(--accent-soft);
+  margin: 1rem 0;
+  padding: 0.6rem 1rem;
+  color: #1d4b52;
+}
+
+code {
+  background: #eef2f5;
+  border: 1px solid var(--rule);
+  border-radius: 3px;
+  padding: 0.05rem 0.3rem;
+  font-size: 0.9em;
+}
+
+pre code { display: block; padding: 0.7rem; overflow-x: auto; }
+
+.checklist-item { list-style: none; margin-left: -1.2rem; }
+.checklist-item input { accent-color: var(--accent); }
+
+footer {
+  margin-top: 2.5rem;
+  border-top: 1px solid var(--rule);
+  padding-top: 0.8rem;
+  font-size: 0.8rem;
+  color: #6a7a88;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}

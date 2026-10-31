@@ -1,0 +1,11 @@
+# Build output (regenerable; created by build.py)
+site/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Editor litter
+.DS_Store
+*.swp
